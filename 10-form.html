@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <h1>FORM</h1>
+    <h2><strong><u>We use forms to get information from the user</u></strong></h2>
+    <mark>"form"</mark> includes all elements of the form 
+    <br/><mark>"input</mark> is used to get information from the user
+   <br/> <mark>"label"</mark> is used to give information about form elements
+    <form>
+      <br/><label for="name">Please enter your full name</label>
+      <input id="name" type="text" minlength="10">
+      <button>Save</button>
+      <br/><br/>
+        <form>
+            <label>Please enter a number</label>
+            <input type="number" max="100"/>
+            <br /><br />
+            <label>Please write your email address</label>
+            <input type="email" required />
+            <br /><br />
+            <label>Please enter your password</label>
+            <input type="password" maxlength="8">
+            <br /><mark>For password if we write password after type attribution, the characters will be swapped with stars</mark>
+            <br /><br />
+            <label>Please enter your website address</label>
+            <input type="url" required>
+            <br /><br />
+            <label>Please enter your phone number</label>
+            <input type="tel" />
+            <br /><br /> 
+            <input type="radio" name="Gender" />
+            <label>Female</label>
+            <br />
+            <input type="radio" name="Gender"/>
+            <label>Male</label>
+            <br />
+            <input type="radio" name="Gender" />
+            <label>Not Specified</label>
+            <br /><br /> 
+            <input type="checkbox" name="Hobbies" />
+            <label>Java</label>
+            <br />
+            <input type="checkbox" name="Hobbies" />
+            <label>SQL</label>
+            <br />
+            <input type="checkbox" name="Hobbies" />
+            <label>API</label>
+            <br /><br /> 
+            <label>Choose a color</label>
+            <input type="color" />
+            <br /><br /> 
+            <label>Choose a range</label>
+            <input type="range" step="20"/>
+            <br /><br /> 
+            <label>Choose a file from your computer</label>
+            <input type="file" />
+            <br /><br /> 
+            <label>Please enter a date</label>
+            <input type="date" />
+            <br /><br /> 
+           <select name="Language">
+            <option value="" selected disabled >Please Choose a Language</option>
+            <option value="">English</option>
+            <option value="">French</option>
+            <option value="">Turkish</option>
+            <option value="">German</option>
+            </select>
+            <br /><br /> 
+            
+            <input type="submit" value="Save" />
+            <input type="reset" value="Amend" />
+            <br /><br />
+            <mark>Note</mark>The below two do the same job??? I dont think so!!Ask to the teacher!!
+            <br /><br />
+            <input type="button" value="Save" />
+            <br />This above does anly have a button box and is not connected anything at the moment. We need to add a function or smth...
+            <br /><button>Button</button>
+            <br />This above does saves and submits the form?
+
+
+
+        <br /><br /><input type="submit" value="Send the form" />
+
+        </form>
+
+
+     <h2>1-Types of Input</h2>
+     <ol>
+        <li> "input <mark>type="</mark>text | email | number..." <mark>placeholder="</mark>Please write your email address""</li>
+    <br/><br/>-><i>input tag has an attribute called <mark>type</mark></i>
+    <br/><br/>-><i>We need to change this attribute to collect different type of information from the user</i>
+        <br /><br /><li>input <mark>type="</mark>button | submit | reset" <mark>name="</mark>"button" <mark>value=</mark>"Save"</li>
+        <br /><br /><li> "input <mark>type="</mark>ratio | checkbox file" <mark>name="</mark>Hobbies" <mark>value="</mark>skiing"</li>
+        <br />
+
+        <mark>radio</mark> gives a circle. We click in it and choose the option that is suitable as an answer. When we add "name" attribution in the input syntax and use the same name with the others, it puts all of them under one umbrella, picks only one option, sends one option. For example if we ask "Select your gender", user can only select one gender. 
+
+        <mark>checkbox</mark> is a little box. Similar to radio. You can add name and id as well. With checkbox, you can choose more than one option
+
+        <mark>file</mark> we can get a file from our computer
+
+        <mark>colour and range</mark> colour option can allow user to choose a color for text or background. And range can be adjusted with step attribute
+
+       <br />  <br /><li>input <mark>type="</mark>date | time" <mark>name=""</mark> <mark>value=</mark>""</li>
+       <br /> <br /> <mark>date - time - month - week - datetime - local</mark>
+    
+
+
+    </ol>
+    <h2> 2-Attributes used for form validation</h2>
+     
+    <ol type="A">
+       <br /> "input <mark>type="</mark>"text" <mark>placeholder="</mark>Please write your email address"<mark>required minlength=</mark>"2"
+        <li>required</li>
+        <li>minlength</li>
+        <li>maxlenght</li>
+        <li>min</li>
+        <li>max</li>
+       
+    </ol>
+
+    <h2>3-Label and Input connection</h2>
+
+    Inside the form, after label we have <mark>for</mark> and after input we have <mark>id</mark>. When we give the same value to both of them, we connect both of them. 
+
+    <h2>Select</h2> Sometimes on pages, users are given an option to choose a language, or something else. We do this with select. What we did above language axample, we added selected and disabled attributions. It showed the specific one we chose as a starting point. We also disabled that to stop user to choose that one.
+
+    <h2>Semantic Elements</h2>
+
+    A semantic element clearly describes its meaning to both the browser and the developer.
+
+    Examples of non-semantic elements: "div" and "span" - Tells nothing about its content.
+    Examples of semantic elements: "form", "table", and "article" - Clearly defines its content. More; "aside", "details", "mark"...
+
+    
+
+    
+
+
+    
+
+    </form>
+    
+</body>
+</html>
