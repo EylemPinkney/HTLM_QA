@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core CSS</title>
+</head>
+<body>
+    <h1>Core CSS</h1>
+
+    CSS is the language we use to style a Web page.
+
+    <hr>
+
+<h2>What is CSS?</h2>
+
+CSS manages the colors, fonts, and layouts of your website elements, as well as allowing you to add effects or animations to your pages.
+
+<ul>
+    <li>CSS stands for Cascading Style Sheets</li>
+    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+    <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+    <li>External stylesheets are stored in CSS files</li>
+   
+</ul>
+<hr>
+
+<h2>3 Ways of Styling HTML</h2>
+
+<ol>
+    <li>Inline styling</li>
+    <li>Internal styling</li>
+    <li>External styling</li>
+</ol>
+
+<hr>
+
+<h3>1- Inline styling</h3>
+
+We open our HTML file and use the styling inside individual HTML tags. For example; " style="color : red">Hello World" -> in in the tag where it says color : red is CSS and changes text colors.
+
+1- color -> is used to change the text color -> " style="color : red">Hello World"
+2- background-color -> is used to change the background color -> " style="background-color : red">Hello World"
+3- font-size -> is used the changed the font size. For example, I can make my h1 so big or so small..For SEO h1 is important. I may want a very small headline, n that case it'd be useful.
+"a href="page1.html" style="font-size:20px""Hello World"/a"
+4- text-align -> is used to put the text left, right, center, justify
+"div style="text-align:center""Hello World"/div"
+
+<h3>2- Internal Styling</h3>
+
+When we use "style" tag, this effects whole page. It is usually used in "head" tag
+
+"style
+    p{
+        color: red; 
+        text-align:center;
+        font-size: 22px;
+
+    }
+/style"
+
+<h3>3- External Styling</h3>
+
+If we have some styles that are used for more than one html page, we save them in a folder. We create a folder called style.css and connect to the other html files where styles are used.
+
+"link rel="stylesheet" href="./CoreCSS.html"""
+
+link is a tag. rel is a relation. we say connect my  stylepage to the html page we want to relate to...we can relate this stylesheet to as many page as we want.
+
+<h4>CSS selections(External)</h4>
+
+<ol>
+    <li>Select all html elements</li>
+    *{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    <br />* selects evertyhing from that htlm page we connected. After star we open-close {}, inside, we put the changes we want to make
+
+    <li>Select and change the elements with the same tag</li>
+    p{
+        font-size: 20px;
+        text-align: center; 
+    }
+
+    <br />Selects a the tag we choose, such as p, main, h1, etc...and changes all for example mains in thathtml
+
+
+
+
+</ol>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
