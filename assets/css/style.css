@@ -1,14 +1,27 @@
-/*h1{
+h1{
     color: red;
-}*/
+}
 
 *{
     font-size: 30px;
     text-align: center;
-    color: khaki;
+    color: blue;
 }
-
+/*tag selection*/
 p{
-    font-size: 30px;
+    font-size: 12px;
     text-align: center;
+}
+/*class selection*/
+.textcolor{
+    color: crimson;
+}
+.textsize{
+    font-size: 20px;
+    text-align: left;
+}
+/*id selection*/
+#p1{
+    text-align: right;
+    background-color: aquamarine;
 }

@@ -13,30 +13,32 @@
 
     <hr>
 
-<h2>What is CSS?</h2>
+<h2>1.What is CSS?</h2>
 
 CSS manages the colors, fonts, and layouts of your website elements, as well as allowing you to add effects or animations to your pages.
 
 <ul>
     <li>CSS stands for Cascading Style Sheets</li>
     <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+    <li>An HTML element is defined by a start tag, some content, and an end tag. </li>
     <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
     <li>External stylesheets are stored in CSS files</li>
    
 </ul>
 <hr>
 
-<h2>3 Ways of Styling HTML</h2>
+<h2>2. Styling HTML</h2>
+There are 3 ways of styling HTML
 
-<ol>
+<ul>
     <li>Inline styling</li>
     <li>Internal styling</li>
     <li>External styling</li>
-</ol>
+</ul>
 
 <hr>
 
-<h3>1- Inline styling</h3>
+<h3>2.1- Inline styling</h3>
 
 We open our HTML file and use the styling inside individual HTML tags. For example; " style="color : red">Hello World" -> in in the tag where it says color : red is CSS and changes text colors.
 
@@ -47,7 +49,7 @@ We open our HTML file and use the styling inside individual HTML tags. For examp
 4- text-align -> is used to put the text left, right, center, justify
 "div style="text-align:center""Hello World"/div"
 
-<h3>2- Internal Styling</h3>
+<h3>2.2- Internal Styling</h3>
 
 When we use "style" tag, this effects whole page. It is usually used in "head" tag
 
@@ -60,7 +62,7 @@ When we use "style" tag, this effects whole page. It is usually used in "head" t
     }
 /style"
 
-<h3>3- External Styling</h3>
+<h3>2.3- External Styling</h3>
 
 If we have some styles that are used for more than one html page, we save them in a folder. We create a folder called style.css and connect to the other html files where styles are used.
 
@@ -79,26 +81,101 @@ link is a tag. rel is a relation. we say connect my  stylepage to the html page 
 
     <br />* selects evertyhing from that htlm page we connected. After star we open-close {}, inside, we put the changes we want to make
 
-    <li>Select and change the elements with the same tag</li>
+   <br /> <li>Select and change the elements with the same tag</li>
     p{
         font-size: 20px;
         text-align: center; 
     }
 
-    <br />Selects a the tag we choose, such as p, main, h1, etc...and changes all for example mains in thathtml
+    <br />Selects a the tag we choose, such as p, main, h1, etc...and changes all for example mains in that html
 
-
-
-
+    <br /> <li>class attribute => Select and change specific element in html.</li>
+    For example you have 5 "p" tags(5 paragraphs) in one html file. And you only want to change smth on one specific paragraphs. You go to your html file, go to the paragraph and write the following syntax 
+    -> "p class="xyz""............"p" We created a class here. We can give any name we want to, to this class.Then we go to our style.css file and call that class from that file and do the changes we want to -> ".xyz{
+        font-size:20px;
+    }"
+    We can use this classes on other elements as well. Just go and write the class name after the tag.
+    <br /> <li>id attribute => Select only one element</li>
+    The HTML id attribute is used to specify a unique id for an HTML element.
+    You cannot have more than one element with the same id in an HTML document.
 </ol>
+<h4>Select Summary</h4>
+    We have 4 CSS selections; * for evertyhing, tag for the tags on the page, . for class, # for id.
+
+    A Class name can be used by multiple HTML elements, while an ID name must only be used by one HTML element within the page
+
+    <hr>
+<h2>3. CSS Comment</h2>
+
+To add a comment on our page use /* xyz */ This will be visible to the devs not users.
+
+<hr>
+<h2>4. Core CSS continues</h2>
+<mark>Height and Width</mark>
+<br />The CSS height and width properties are used to set the height and width of an element.
+The CSS max-width property is used to set the maximum width of an element.
+The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
+<br /><mark>text-decoration</mark>
+<br /> It is used to underline, overline, line-through and none to the selected text.
+
+<br /><mark>font-style</mark>
+We used i and em in html. CSS we use in head font-style: italic;
+We have only 2 font styles; italic and straight
+
+<br /><mark>font-weight</mark>
+It was b and strong in html. CSS we use in Head font-weight: 500; 
+100-900, bold, bolder, lighter
+
+<br /><mark>How to get a new font from Google Fonts</mark>
+<br /> 1- Go to google fonts;
+https://fonts.google.com/
+<br /> 2- Choose the font, select the ones from the list, copy the page on the left
+<br /> 3- Come to your html page, go into head, paste it there.
+<br /> 4- Go to google fonts again and copy the CSS rules to specify families
+<br /> 5- Paste it in the style
+<br /><mark>styling-lists</mark>
+
+<br /><h4>list-style-type</h4>
+We use it to style our lists. We can use; disc, square, circle, none, "emoji"
+list-style-type:disc;
+We can also use emoji. Just copy the emoji you want to use, e.g. ❤️, go to the head part of the html page and put is as follows; 
+<br />list-style-type:"❤️";
+
+<br /><h4>list-style-image</h4>
+We can change the list symbol with an image
+<br />list-style-image: url("./.....");
+
+<br /><h4>list-style-position</h4>
+We can change the position of the symbol on the list; inside  | outside
+
+<br />list-style-position:inside;
+
+<br /><h4>Hover</h4>
+x:hover{
+    ....
+}
+x is any tags such as h1, h2,..button, .class, p, everything.  We write :hover{} inside the paranthesis, we write what we want to change; e.g. color, background color, size, etc. super cool!!
+
+<br /><h4>Websites</h4>
+<mark>a:link</mark> is used for the websites that is not visited on our computer.
+<br /> <mark>a:visited</mark>refers to a website that is visited
+<br /> We can change their appereances in the head
+
+<br /><h4>Measurement Units</h4>
+1- Absolute length units; cm, mm, in, px
+<br /> 2- Relative length units
+<br />%, em(Font size of the parent), rem(Font size of the root element), vh, vw
+
+<br /><mark>Note</mark>PPI stands for pixels per inch. This is what digital resolution is measured in. Most monitors will display images in the neighborhood of 67-100ppi. The standard resolution for web images is 72ppi. This will display your image so that it looks crisp and sharp on screen.
+
+<br /><mark>em vs rem</mark>
+
+<br />Within CSS, em and rem are both scalable units that also specify values of properties. em and rem meet web accessibility standards, and, unlike px, scale better. Consequently, they are more suited for responsive design.
+
+<br /><mark>em</mark> is a CSS unit relative to the font size of the parent element(if I have a p tag and inside thr p tag I have a div tag, p is parent of div)while <mark>rem</mark> is a CSS unit relative to the html (root) font-size(in the head there is a default size for the whole page that is default as 16px) We can change that one if we wnat to. In the style; ;root{font-size: ..px;}
 
 
 
-
-
-
-
-
-    
+   
 </body>
 </html>
